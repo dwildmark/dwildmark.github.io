@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-
-    <title>wildmark&#39;s projects by dwildmark</title>
-  </head>
-
-  <body>
-
-    <header>
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" id="title" class="brand-logo center"></a>
+        </div>
+      </nav>
       <div class="container">
-        <h1>wildmark&#39;s projects</h1>
-        <h2></h2>
+      <p>Du har passerat cementfabriken. Klicka på länkarna för att se hur det har sett ut, och tyck till om framtiden.</p>
 
-        <section id="downloads">
-          <a href="https://github.com/dwildmark" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-        <h3>
-<a id="hej-och-välkommen" class="anchor" href="#hej-och-v%C3%A4lkommen" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hej och välkommen!</h3>
-
-<p>Har egentligen inte mycket att skriva här.</p>
-
-<h3>
-<a id="här-kan-det-komma-att-stå-nåt-kul" class="anchor" href="#h%C3%A4r-kan-det-komma-att-st%C3%A5-n%C3%A5t-kul" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Här kan det komma att stå nåt kul.</h3>
-
-<p>Men just nu gör det inte det.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Kontakta mig på mitt telefonnummer eller min email-adress. 
-Båda är hemliga för allmänheten.</p>
-      </section>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">filter_drama</i>Dåtid</div>
+          <div class="collapsible-body"><img class="responsive-img" id=img-history><p id="history"></p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">place</i>Nutid</div>
+          <div class="collapsible-body"><img class="responsive-img" id="img-today"><p id="today"></p></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">whatshot</i>Framtid</div>
+          <div class="collapsible-body"><img class="responsive-img" id="img-future"><p id="future"></p>
+            <div class="container"><i class="material-icons">thumb_down</i><i class="material-icons">thumb_up</i>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-
-    
-  </body>
-</html>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+    </body>
+  </html>
