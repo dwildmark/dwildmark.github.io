@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" id="title" class="brand-logo center"></a>
+        </div>
+      </nav>
+      <div class="container">
+      <p>Du har passerat <span id="name"></span> Klicka på länkarna för att se hur det har sett ut, och tyck till om framtiden.</p>
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header">
+
+          </div>
+          <div class="collapsible-body">
+            <div class="card">
+              <div class="card-image">
+                <img id="img-history">
+              </div>
+              <div class="card-content">
+                <p id="history"></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+
+          </div>
+          <div class="collapsible-body">
+            <div class="card">
+              <div class="card-image">
+                <img id="img-today">
+              </div>
+              <div class="card-content">
+                <p id="today"></p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+
+          </div>
+          <div class="collapsible-body">
+            <div class="card">
+              <div class="card-image">
+                <img id="img-future">
+              </div>
+              <div class="card-content">
+                <p id="future"></p>
+                <div class="center-align">
+                  <i class="medium material-icons">thumb_down</i>
+                  <i class="medium material-icons">thumb_up</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+    </body>
+  </html>
